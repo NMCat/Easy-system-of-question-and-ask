@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="author" content="">
+		<title>智游问答-上传头像</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="all.css"/>
+	</head>
+	<body>
+		<!-- 导航栏 -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="row">
+					<div class="navbar-title">
+						<span id="goBack" class="glyphicon glyphicon-chevron-left pull-left"></span>
+						上传头像
+						<span id="home" class="glyphicon glyphicon-home pull-right"></span>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+		<!-- 上传头像表单 -->
+		<div class="container">
+			<form action="/user/upload" method="post" enctype="multipart/form-data">
+				<div class="form-group">
+					<input type="file" name="photo" accept=".jpg,.png" autocomplete="off" />
+				</div>
+				<input type="submit" class="btn btn-success form-control" value="上传头像" />
+			</form>
+		</div>
+		
+		<!-- 模态框（Modal） -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    	<div class="modal-dialog">
+	    		<div class="modal-content">
+	    			<div class="modal-header">
+	    				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	    				<h4 class="modal-title" id="myModalLabel">智游教育</h4>
+	    			</div>
+	    			<div class="modal-body">在这里添加一些文本</div>
+	    			<div class="modal-footer">
+	    				<button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+	    			</div>
+	    		</div>
+	    	</div>
+		</div>
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="scripts/upload.js" type="text/javascript" charset="utf-8"></script>
+</html>

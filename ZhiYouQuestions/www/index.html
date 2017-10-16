@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="author" content="">
+		<title>智游问答-首页</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="all.css"/>
+	</head>
+	<body>
+		<!-- 导航栏 -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="row">
+					<!-- 导航栏横幅 -->
+					<a href="#" class="navbar-brand">智游教育</a>
+					<div class="navbar-title pull-right">
+						<!-- 提问图标 -->
+						<span id="ask">
+							<span class="glyphicon glyphicon-plus"></span>
+							提问
+						</span>
+						<!-- &#x3000; 是一个汉字的宽度 -->
+						<!-- &nbsp; 是一个 space 的宽度 -->
+						&nbsp;&nbsp;&nbsp;
+						<!-- 用户相关 -->
+						<span id="user" class="dropdown-toggle" data-toggle="dropdown">
+							<span class="glyphicon glyphicon-user"></span>
+							<!-- 如果登录了，这里显示用户名。如果没登录这里显示登录 -->
+							<span></span>
+						</span>
+						<!-- 下拉列表 -->
+						<ul class="dropdown-menu" style="min-width: 100px;">
+							<li class="text-center"><a href="upload.html">上传头像</a></li>
+							<li class="divider"></li>
+							<li class="text-center" id="logout"><a>退出登录</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+		<!-- 创建一个容器，展示所有问题 -->
+		<div class="container" id="questions">
+			
+		</div>
+		
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="scripts/index.js" type="text/javascript" charset="utf-8"></script>
+</html>
